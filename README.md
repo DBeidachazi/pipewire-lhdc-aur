@@ -8,7 +8,7 @@ AUR packaging recipes for LHDC v5 Bluetooth playback through PipeWire.
 - `pipewire-bluez5-lhdc-git`: builds an out-of-tree PipeWire bluez5 SPA plugin from `DBeidachazi/pipewire` with LHDC v5 enabled.
 - `wireplumber-lhdc-config`: prepends `/usr/lib/spa-0.2-lhdc` to `SPA_PLUGIN_DIR` and enables `lhdc_v5` in WirePlumber's Bluetooth codec list.
 - `pipewire-lhdc-meta`: convenience package that depends on the three active packages above.
-- `lhdc-v5-helper`: deprecated transition package for the old helper-based prototype.
+- `lhdc-v5-helper`: deprecated transition package.
 
 ## Install
 
@@ -29,4 +29,4 @@ liblhdcv5
           -> pipewire-lhdc-meta
 ```
 
-The active implementation does not use QEMU, Android Bionic shims, or a helper process.
+The active implementation links PipeWire to the native `liblhdcv5` library.
