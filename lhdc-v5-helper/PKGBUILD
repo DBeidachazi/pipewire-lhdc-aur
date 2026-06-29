@@ -1,0 +1,14 @@
+# Maintainer: DBeidachazi
+pkgname=lhdc-v5-helper
+pkgver=0.1.0
+pkgrel=5
+pkgdesc="Deprecated transition package for LHDC v5 PipeWire support"
+arch=('any')
+url="https://github.com/DBeidachazi/pipewire-lhdc-aur/tree/master/lhdc-v5-helper"
+license=('MIT')
+depends=('pipewire-lhdc-meta')
+install="$pkgname.install"
+
+package() {
+  :
+}

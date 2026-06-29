@@ -1,0 +1,12 @@
+post_install() {
+  cat <<'EOF'
+==> lhdc-v5-helper is deprecated.
+==> The current LHDC v5 path uses liblhdcv5 directly from PipeWire:
+    liblhdcv5 -> pipewire-bluez5-lhdc-git -> wireplumber-lhdc-config
+==> You can remove this transition package after installing pipewire-lhdc-meta.
+EOF
+}
+
+post_upgrade() {
+  post_install
+}

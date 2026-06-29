@@ -1,0 +1,11 @@
+pkgbase = lhdc-v5-helper
+	pkgdesc = Deprecated transition package for LHDC v5 PipeWire support
+	pkgver = 0.1.0
+	pkgrel = 5
+	url = https://github.com/DBeidachazi/pipewire-lhdc-aur/tree/master/lhdc-v5-helper
+	install = lhdc-v5-helper.install
+	arch = any
+	license = MIT
+	depends = pipewire-lhdc-meta
+
+pkgname = lhdc-v5-helper
