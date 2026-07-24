@@ -1,9 +1,10 @@
 # wireplumber-lhdc-config
 
-WirePlumber configuration for the out-of-tree LHDC v5 PipeWire plugin.
+WirePlumber configuration for the upstream LHDC v5 PipeWire plugin overlay.
 
-It enables `lhdc_v5` in the Bluetooth codec list and prepends
-`/usr/lib/spa-0.2-lhdc` to `SPA_PLUGIN_DIR`.
+It prepends `/usr/lib/spa-0.2-lhdc` to `SPA_PLUGIN_DIR`. WirePlumber's
+default codec list remains unchanged, so all available Bluetooth codecs stay
+enabled.
 
 Restart WirePlumber after install:
 
